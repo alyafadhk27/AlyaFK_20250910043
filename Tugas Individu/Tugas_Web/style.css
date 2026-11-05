@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFF9D6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.nav-link {
+    text-decoration: none;
+    color: #8EA66B;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #8EA66B;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+.nav-link:link { color: #8EA66B; }
+.nav-link:visited { color: #8EA66B; }
+.nav-link:hover {
+    background-color: #8EA66B;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+.nav-link:active {
+    transform: translateY(0);
+}
+.nav-link.active {
+    background-color: #8EA66B;
+    color: #ffffff;
+}
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+h1 {
+    color: #8EA66B;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+.subtitle {
+    color: #D8A2A2;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5px;
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color: #E6E6E6;
+    margin: 20px 0;
+}
+h2 {
+    color: #8EA66B;
+    margin-bottom: 15px;
+    border-left: 4px solid #D8A2A2;
+    padding-left: 10px;
+}
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.table-responsive {
+    overflow-x: auto;
+    margin-top: 15px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+th {
+    background-color: #8EA66B;
+    color: #ffffff;
+    padding: 12px 15px;
+    text-align: left;
+}
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eeeeee;
+    background-color: #FFF0F0;
+    color: #444444;
+}
+tr:nth-child(even) td {
+    background-color: #FCEBEB;
+}
+tr:hover td {
+    background-color: #F5D5D5;
+}
+ul {
+    list-style-type: square;
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+li {
+    margin-bottom: 8px;
+}
+blockquote {
+    background-color: #FFF9D6;
+    border-left: 5px solid #8EA66B;
+    padding: 15px 20px;
+    margin: 20px 0;
+    font-style: italic;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Diperbaiki dari 1rem ke 1fr */
+    gap: 20px;
+    justify-content: center;
+    margin-top: 15px;
+}
+.gallery-card {
+    border: 3px solid #8EA66B;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.gallery-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.gallery-card img:hover {
+    transform: scale(1.05);
+}
+.profile-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #8EA66B;
+    object-fit: cover;
+}
+.bio-table td.label {
+    font-weight: bold;
+    color: #8EA66B;
+    width: 35%;
+    background-color: transparent;
+}
+.bio-table td {
+    background-color: transparent;
+}
+.badge {
+    display: inline-block;
+    background-color: #8EA66B;
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+.card-item {
+    background-color: #FFF0F0;
+    border-left: 4px solid #8EA66B;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.card-item h3 {
+    color: #8EA66B;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+.contact-btn {
+    display: inline-block;
+    background-color: #D8A2A2;
+    color: #ffffff !important;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 5px;
+    transition: background 0.3s ease;
+}
+.contact-btn:hover {
+    background-color: #c48b8b;
+}
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #777777;
+}
